@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            //命令行调试
+            "name": "Crawl with scrapy",
+            "type": "python",
+            "request": "launch",
+            "module": "scrapy",
+            "cwd": "${fileDirname}",
+            "args": [
+                "crawl",//命令名
+                "dmoz" //爬虫名字， tutorial 工程
+            ],
+            "console": "internalConsole"
+        },
+        {
+            //运行比如 bbs_fob.py 工程
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        }
+    ]
+}
